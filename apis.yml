@@ -1,7 +1,17 @@
 aid: kayum
 name: Kayum
-description: Kayum is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Kayum (KAYUM, S.A.P.I. de C.V.) is a Mexico City-based insurance data-analytics
+  and software company serving the Mexican insurance market. It gives insurers
+  exclusive, continuously updated market intelligence and actionable analysis:
+  monthly price panels for GMM (major-medical), Life, and Auto lines backed by
+  data from more than ten leading insurers, competitive pricing models, a
+  quotation-processing tool (Claveteador) that compresses quote data preparation
+  from days to minutes, customer-facing quoting platforms (Cotizadores)
+  processing over 100,000 auto quotes a month, and compliance/document
+  verification tooling (Suite 492 / ID Documental). Backed by 500 Global. The
+  company publishes a marketing website but no public developer API, SDK, or
+  documentation surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/kayum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,29 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kayum.mx/wp-content/uploads/2025/08/LogoKayumTxt.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Insurance
+- InsurTech
+- Data Analytics
+- Market Data
+- Insurance Pricing
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kayum-domain-security.yml
 - type: Website
   url: https://kayum.mx
+- type: PrivacyPolicy
+  url: https://kayum.mx/aviso-privacidad/
+- type: Support
+  url: https://kayum.mx/contacto/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/kayum-expertos-en-seguros/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
